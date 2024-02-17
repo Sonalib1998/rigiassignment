@@ -1,13 +1,94 @@
-body {
+/* styles.css */
+
+/* Reset some default styles */
+body,
+h1,
+p,
+ul,
+li {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* VideoPlayer styles */
+.video-player {
+  width: 640px;
+  height: 360px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.video-player button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.video-player button:hover {
+  background-color: #2980b9;
+}
+
+.video-player input {
+  width: 100%;
+}
+
+.video-player select {
+  padding: 8px;
+}
+
+/* Playlist styles */
+.playlist {
+  width: 200px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-item {
+  background-color: #ddd;
+  padding: 8px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.playlist-item:hover {
+  background-color: #ccc;
+}
+
+.playlist h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.playlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playlist li {
+  cursor: pointer;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.playlist li:hover {
+  background-color: #e0e0e0;
 }
